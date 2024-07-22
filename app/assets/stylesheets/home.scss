@@ -1,0 +1,103 @@
+/* app/assets/stylesheets/home.scss */
+
+/* Importiere die Schriftarten */
+@import url('https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&family=Futura:wght@400&display=swap');
+
+/* Farbvariablen */
+$color-primary: #7b4d35;
+$color-secondary: #c7b03e;
+
+/* Allgemeine Stile */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Garamond', serif;
+  background: image-url('background.png') no-repeat center bottom;
+  background-size: cover;
+  background-position: center -110%;
+  color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Start at the top */
+  height: 100vh;
+  text-align: center;
+  padding-top: 20vh; /* Adjust padding to move content down */
+}
+
+/* Stil für den gesamten Inhalt */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  .coming-soon {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-secondary;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
+  }
+
+  .event-details {
+    .names {
+      font-size: 2.5rem;
+      color: $color-primary;
+
+      span {
+        font-size: 3rem; // Größerer Buchstabe
+      }
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+
+        span {
+          font-size: 2.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.5rem;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .date {
+      font-size: 2rem;
+      color: $color-primary;
+      margin-top: 0.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .location {
+      font-size: 1.5rem;
+      color: $color-primary;
+      margin-top: 0.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,7 +1,9 @@
 /* app/assets/stylesheets/home.scss */
 
 /* Importiere die Schriftarten */
-@import url('https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&family=Futura:wght@400&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&family=Nunito:wght@300;400&display=swap');*/
+@import 'fonts';
+
 
 /* Farbvariablen */
 $color-primary: #7b4d35;
@@ -14,14 +16,28 @@ body {
   font-family: 'Garamond', serif;
   background: image-url('background.png') no-repeat center bottom;
   background-size: cover;
-  background-position: center -110%;
+  background-position: center -150%;
   color: $color-primary;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Start at the top */
+  align-items: flex-start;
   height: 100vh;
   text-align: center;
-  padding-top: 15vh; /* Adjust padding to move content down */
+  padding-top: 15vh;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+    background-position: center -250%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: contain;
+    background-position: center -250%;
+  }
 }
 
 /* Stil für den gesamten Inhalt */
@@ -32,76 +48,84 @@ body {
   padding: 1rem;
 
   .coming-soon {
+    font-family: 'Garamond', serif;
     font-size: 2rem;
     font-weight: bold;
     color: $color-secondary;
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
 
     @media (max-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     @media (max-width: 480px) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
   .event-details {
     .names {
-      font-size: 2rem;
-      font-weight: extra-light;
+      font-family: 'Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: light;
       color: $color-primary;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.8rem;
       margin-bottom: 2rem;
 
       span {
-        font-size: 3rem; // Größerer Buchstabe
+        font-size: 2.5rem;
       }
 
       @media (max-width: 768px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
 
         span {
-          font-size: 2rem;
-          letter-spacing: 0.4rem;
+          font-size: 2.2rem;
+          letter-spacing: 0.7rem;
         }
       }
 
       @media (max-width: 480px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
 
         span {
-          font-size: 2rem;
-          letter-spacing: 0.4rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.7rem;
         }
       }
     }
 
     .date {
-      font-size: 1.5rem;
+      font-family: 'Futura', sans-serif;
+      font-weight: light;
+      font-size: 1rem;
       color: $color-primary;
       margin-top: 0.5rem;
+      letter-spacing: 0.4rem;
 
       @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
       }
 
       @media (max-width: 480px) {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
       }
     }
 
     .location {
-      font-size: 1.5rem;
+      font-family: 'Futura', sans-serif;
+      font-weight: light;
+      font-size: 1rem;
       color: $color-primary;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
+      letter-spacing: 0.4rem;
 
       @media (max-width: 768px) {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
       }
 
       @media (max-width: 480px) {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
   }

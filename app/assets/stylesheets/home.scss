@@ -35,6 +35,7 @@ body {
 
 @media (max-width: 480px) {
   body {
+    background: image-url('Weinberge_mob.png') no-repeat center bottom;
     background-size: contain;
     background-position: center -250%;
   }
@@ -49,10 +50,12 @@ body {
 
   .coming-soon {
     font-family: 'Garamond', serif;
+    font-weight: bold;
     font-size: 2rem;
     font-weight: bold;
     color: $color-secondary;
     margin-bottom: 7rem;
+    letter-spacing: 0.4rem;
 
     @media (max-width: 768px) {
       font-size: 2rem;
@@ -70,7 +73,7 @@ body {
       font-weight: light;
       color: $color-primary;
       letter-spacing: 0.8rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
 
       span {
         font-size: 2.5rem;

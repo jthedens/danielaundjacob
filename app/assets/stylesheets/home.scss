@@ -15,7 +15,7 @@ body {
   padding: 0;
   font-family: 'Garamond', serif;
   background: image-url('background.png') no-repeat center bottom;
-  background-size: 100% 50%;
+  background-size: 100vh 50vh;
   background-position: center bottom;
   color: $color-primary;
   display: flex;
@@ -24,20 +24,6 @@ body {
   height: 100vh;
   text-align: center;
   padding-top: 15vh;
-}
-
-@media (max-width: 768px) {
-  body {
-    background-size: 70% 50%;
-    background-position: center bottom;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    background-size: 70% 50%;
-    background-position: center bottom;
-  }
 }
 
 /* Stil für den gesamten Inhalt */

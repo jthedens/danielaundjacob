@@ -14,8 +14,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Garamond', serif;
-  background: image-url('Weinberge_mob.png') no-repeat center bottom;
-  background-size: 100% 50%;
+  /*background: image-url('Weinberge_mob.png') no-repeat center bottom;
+  background-size: 100% 50%;*/
 /*  background-position: center bottom;*/
   color: $color-primary;
   display: flex;
@@ -27,17 +27,27 @@ body {
 }
 
 
+.background-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Hintergrundbild nimmt die untere Hälfte des Bildschirms ein */
+  background: url('background.png') no-repeat center bottom;
+  background-size: cover; /* Bild wird proportional skaliert und füllt den Container */
+}
+
 @media (max-width: 768px) {
-  body {
-    background: image-url('Weinberge_mob.png') no-repeat center bottom;
-    background-size: 100% 50%; /* Deckt die untere Hälfte des Bildschirms */
+  .background-container {
+    background: url('background-mobile.png') no-repeat center bottom;
+    background-size: cover; /* Bild wird proportional skaliert und füllt den Container */
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    background: image-url('Weinberge_mob.png') no-repeat center bottom;
-    background-size: 100% 50%; /* Deckt die untere Hälfte des Bildschirms */
+  .background-container {
+    background: url('background-mobile.png') no-repeat center bottom;
+    background-size: cover; /* Bild wird proportional skaliert und füllt den Container */
   }
 }
 

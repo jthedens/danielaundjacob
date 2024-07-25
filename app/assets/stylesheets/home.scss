@@ -15,6 +15,7 @@ body {
   padding: 0;
   font-family: 'Garamond', serif;
   background: image-url('Weinberge_mob.png') no-repeat center bottom;
+  background-size: cover;
   background-position: center -250%;
   color: $color-primary;
   display: flex;

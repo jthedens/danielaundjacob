@@ -14,16 +14,31 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Garamond', serif;
-  background: image-url('background.png') no-repeat center;
-  background-size: cover;
-  background-position: center -450%;
   color: $color-primary;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
   text-align: center;
-  padding-top: 15vh;
+  height: 100vh;
+  overflow: hidden;
+/*  padding-top: 15vh;*/
+
+/* Hintergundbild */
+  /*background: image-url('background.png') no-repeat center bottom;
+  background-size: cover;
+  background-position: center bottom;*/
+}
+
+
+.background-container {
+  background: image-url('background.png') center;
+  background-size: cover;
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
 /* Stil für den gesamten Inhalt */

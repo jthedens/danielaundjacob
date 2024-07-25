@@ -14,9 +14,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Garamond', serif;
-  background: image-url('Weinberge_mob2.png') no-repeat center bottom;
-  background-size: cover;
-  background-position: center bottom;
+  background: image-url('Weinberge_mob.png') no-repeat center bottom;
+  background-size: 100% 50%;
+/*  background-position: center bottom;*/
   color: $color-primary;
   display: flex;
   justify-content: center;
@@ -26,17 +26,18 @@ body {
   padding-top: 15vh;
 }
 
+
 @media (max-width: 768px) {
   body {
-    background-size: contain;
-    background-position: center bottom;
+    background: image-url('Weinberge_mob.png') no-repeat center bottom;
+    background-size: 100% 50%; /* Deckt die untere Hälfte des Bildschirms */
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-size: contain;
-    background-position: center bottom;
+    background: image-url('Weinberge_mob.png') no-repeat center bottom;
+    background-size: 100% 50%; /* Deckt die untere Hälfte des Bildschirms */
   }
 }
 

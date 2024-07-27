@@ -14,7 +14,7 @@ body {
   padding: 0;
   font-family: 'Garamond', serif;
   background: image-url('background.jpg') no-repeat center;
-  background-size: cover;
+  background-size: 100% 50vh; /* Bild nimmt 50% der Höhe und 100% der Breite ein */
   background-position: center bottom;
   color: $color-primary;
   display: flex;

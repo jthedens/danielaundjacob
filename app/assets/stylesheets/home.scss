@@ -27,16 +27,16 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-size: cover; /* Bild in voller Breite anzeigen und proportional skalieren */
-    background-position: center 70vh; /* Positionierung des Bildes unten */
+    background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
+    background-position: center bottom; /* Positionierung des Bildes unten */
     min-height: 100vh; /* Anpassen für Tablets und kleinere Bildschirme */
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-size: cover; /* Bild in voller Breite anzeigen und proportional skalieren */
-    background-position: center 70vh; /* Positionierung des Bildes unten */
+    background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
+    background-position: center bottom; /* Positionierung des Bildes unten */
 
     min-height: 100vh; /* Anpassen für Smartphones */
   }

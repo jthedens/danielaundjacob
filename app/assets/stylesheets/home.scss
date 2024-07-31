@@ -29,6 +29,7 @@ body {
   body {
     background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
     background-position: center 70vh; /* Positionierung des Bildes unten */
+    min-height: 100vh; /* Anpassen für Tablets und kleinere Bildschirme */
   }
 }
 
@@ -36,6 +37,8 @@ body {
   body {
     background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
     background-position: center 70vh; /* Positionierung des Bildes unten */
+
+    min-height: 100vh; /* Anpassen für Smartphones */
   }
 }
 

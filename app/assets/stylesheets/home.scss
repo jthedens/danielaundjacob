@@ -27,15 +27,15 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-size: 100% auto; /* Bild in voller Breite anzeigen und proportional skalieren */
-    background-position: center bottom; /* Positionierung des Bildes unten */
+    background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
+    background-position: center 70vh; /* Positionierung des Bildes unten */
   }
 }
 
 @media (max-width: 480px) {
   body {
-    background-size: 100% auto; /* Bild in voller Breite anzeigen und proportional skalieren */
-    background-position: center bottom; /* Positionierung des Bildes unten */
+    background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
+    background-position: center 70vh; /* Positionierung des Bildes unten */
   }
 }
 
@@ -45,8 +45,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 10vh;
+
 
   .coming-soon {
     font-family: 'Garamond', serif;

@@ -13,22 +13,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Garamond', serif;
-  background: image-url('background.jpg') no-repeat center;
-  background-size: 100% 50vh; /* Bild nimmt 50% der Höhe und 100% der Breite ein */
-  background-position: center bottom;
+  background: image-url('background.jpg') no-repeat center 40vh;
+  background-size: contain;
+  background-attachment: scroll;
   color: $color-primary;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
+  min-height: 200vh;
   text-align: center;
-  padding-top: 20vh; /* Abstand des Textes vom oberen Rand */
+  padding-top: 20vh;
 }
 
 @media (max-width: 768px) {
   body {
-    background-size: 100% auto; /* Bild in voller Breite anzeigen und proportional skalieren */
-    background-position: center bottom; /* Positionierung des Bildes unten */
+    background-size: cover; /* Bild in voller Breite anzeigen und proportional skalieren */
+    background-position: center 50vh; /* Positionierung des Bildes unten */
   }
 }
 
@@ -45,6 +45,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  margin-top: 25vh;
 
   .coming-soon {
     font-family: 'Garamond', serif;

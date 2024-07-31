@@ -27,8 +27,8 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-size: cover; /* Bild in voller Breite anzeigen und proportional skalieren */
-    background-position: center 50vh; /* Positionierung des Bildes unten */
+    background-size: 100% auto; /* Bild in voller Breite anzeigen und proportional skalieren */
+    background-position: center bottom; /* Positionierung des Bildes unten */
   }
 }
 
@@ -46,6 +46,7 @@ body {
   align-items: center;
   padding: 1rem;
   margin-top: 20vh;
+  margin-bottom: 20vh;
 
   .coming-soon {
     font-family: 'Garamond', serif;

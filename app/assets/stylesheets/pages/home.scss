@@ -1,21 +1,8 @@
-/* app/assets/stylesheets/home.scss */
-
-/* Importiere die Schriftarten */
-/*@import url('https://fonts.googleapis.com/css2?family=Garamond:wght@400;700&family=Nunito:wght@300;400&display=swap');*/
-@import 'fonts';
-
-/* Farbvariablen */
-$color-primary: #7b4d35;
-$color-secondary: #c7b03e;
-
 /* Allgemeine Stile */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Garamond', serif;
-  background: image-url('background.jpg') no-repeat center 40vh;
-  background-size: contain;
-  background-attachment: scroll;
   color: $color-primary;
   display: flex;
   justify-content: center;
@@ -25,8 +12,14 @@ body {
   padding-top: 20vh;
 }
 
+body.home-index {
+  background: image-url('background.jpg') no-repeat center 40vh;
+  background-size: contain;
+  background-attachment: scroll;
+}
+
 @media (max-width: 768px) {
-  body {
+  body.home-index {
     background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
     background-position: center bottom; /* Positionierung des Bildes unten */
     min-height: 100vh; /* Anpassen für Tablets und kleinere Bildschirme */
@@ -34,7 +27,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
+  body.home-index {
     background-size: contain; /* Bild in voller Breite anzeigen und proportional skalieren */
     background-position: center bottom; /* Positionierung des Bildes unten */
     min-height: 100vh; /* Anpassen für Smartphones */
@@ -48,7 +41,6 @@ body {
   align-items: center;
   padding: 1rem;
   margin-top: 10vh;
-
 
   .coming-soon {
     font-family: 'Garamond', serif;

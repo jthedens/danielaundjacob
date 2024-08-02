@@ -1,0 +1,9 @@
+/* Farben und Schriftarten zuerst importieren*/
+@import 'config/colors';
+@import 'config/fonts';
+
+@import "components/navbar";
+@import "components/tabs";
+/* Dann die spezifischen Seiten-Styles*/
+@import 'pages/home';
+@import 'pages/intro';

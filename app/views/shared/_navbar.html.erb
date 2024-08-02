@@ -1,0 +1,34 @@
+<ul class="tabs-underlined list-inline">
+  <li>
+    <%= link_to "start", root_path, class: active_class?(root_path) %>
+  </li>
+  <li>
+    <%= link_to "details", details_path, class: active_class?(details_path) %>
+  </li>
+  <li>
+    <%= link_to "locations", locations_path, class: active_class?(locations_path) %>
+  </li>
+  <li class="dropdown">
+    <%= link_to "infos", infos_path, class: active_class?(infos_path) %>
+    <ul class="dropdown-content">
+      <li><%= link_to "anreise", anreise_path %></li>
+      <li><%= link_to "unterkünfte", unterkuenfte_path %></li>
+      <li><%= link_to "shuttle", shuttle_path %></li>
+      <li><%= link_to "kinder", kinder_path %></li>
+      <li><%= link_to "reden & beiträge", reden_beitraege_path %></li>
+      <li><%= link_to "geschenketisch", geschenketisch_path %></li>
+      <li><%= link_to "kontakte", kontakte_path %></li>
+    </ul>
+  </li>
+  <li>
+    <%= link_to "rsvp", rsvp_path, class: active_class?(rsvp_path) %>
+  </li>
+  <li class="dropdown">
+    <%= link_to "südtirol-highlights", suedtirol_highlights_path, class: active_class?(suedtirol_highlights_path) %>
+    <ul class="dropdown-content">
+      <li><%= link_to "tagesausflüge entlang der weinstraße", tagesausfluege_weinstrasse_path %></li>
+      <li><%= link_to "unsere 3 highlights", unsere_highlights_path %></li>
+      <li><%= link_to "tolle unterkünfte", tolle_unterkuenfte_path %></li>
+    </ul>
+  </li>
+</ul>

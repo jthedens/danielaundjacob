@@ -3,7 +3,14 @@
 @import 'config/fonts';
 
 @import "components/navbar";
-@import "components/tabs";
+@import "components/avatar";
+
 /* Dann die spezifischen Seiten-Styles*/
 @import 'pages/home';
-@import 'pages/intro';
+@import 'pages/start';
+@import 'pages/details';
+@import 'pages/locations';
+@import 'pages/infos';
+@import 'pages/rsvp';
+@import 'pages/highlights';
+

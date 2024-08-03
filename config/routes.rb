@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
+  get 'start', to: 'home#start'
   get 'details', to: 'home#details'
   get 'locations', to: 'home#locations'
   get 'infos', to: 'home#infos'

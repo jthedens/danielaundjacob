@@ -1,8 +1,14 @@
 body.home-start {
   background-color: $color-primary;
   color: $color-secondary;
+  padding-top: 0;
+
+  .tabs-underlined .tab-underlined {
+    color: $color-secondary;
+  }
+
+  h1 {
+    text-decoration: none;
+  }
 }
 
-.tabs-underlined .tab-underlined {
-  color: $color-secondary;
-}

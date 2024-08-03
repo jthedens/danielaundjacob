@@ -1,6 +1,15 @@
 body.home-highlights {
   background-color: $color-primary;
   color: $color-secondary;
+
+  h2 {
+  font-family: 'Futura', serif;
+  text-decoration: underline;
+  }
+
+  a {
+    color: $color-secondary;
+  }
 }
 
 .tabs-underlined .tab-underlined {

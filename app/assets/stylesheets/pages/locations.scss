@@ -1,47 +1,31 @@
 body.home-locations {
   background-color: $color-tertiary;
-}
-
-.tabs-underlined .tab-underlined {
-  color: $color-secondary;
-}
-
-.home-locations {
-  box-sizing: border-box;
   color: $color-secondary;
 
-  section {
-    margin-bottom: 5rem;
-  }
+  .content {
+    line-height: 1rem;
 
-  h2 {
-    font-size: 1.1rem;
-  }
+    a {
+      color: $color-secondary;
+    }
 
-  p {
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-
-  a {
-    font-size: 1rem;
-    color: $color-secondary;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
+    section {
+      margin-bottom: 4rem;
     }
   }
+
+  .tabs-underlined .tab-underlined {
+    color: $color-secondary;
+  }
 }
 
-.image-location {
+
+.location-img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0; /* Abstand zu den anderen Abschnitten */
-
-  img {
-    max-width: 35%; /* Bild wird maximal so breit wie das Container-Element */
-    height: auto; /* Proportionen des Bildes werden beibehalten */
-  }
+  padding-bottom: 3rem;
+  width: 40vw;
 }
+

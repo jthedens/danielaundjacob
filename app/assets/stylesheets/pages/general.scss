@@ -9,13 +9,13 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  // padding-top: 20vh;
+  padding-top: 20vh;
 }
 
 /* Stil für den gesamten Inhalt */
 .content {
   padding: 1rem;
-  width: 30vw;
+  width: 42vw;
   line-height: 2.5;
 }
 
@@ -24,12 +24,14 @@ h1 {
   font-family: 'Futura', serif; // Setzt die Schriftart für h1 auf Garamond
   letter-spacing: 0.4rem;
   font-size: 1.3rem;
+  text-decoration: underline;
 }
 
 h2 {
-  font-family: 'Futura', serif; // Setzt die Schriftart für h2 auf Garamond
+  font-family: 'Garamond', serif; // Setzt die Schriftart für h2 auf Garamond
   letter-spacing: 0.2rem;
-  text-decoration: underline; // Unterstreicht den Text für h2
+  text-decoration: none; // Unterstreicht den Text für h2
+  font-size: 1.2rem;
 }
 
 p {

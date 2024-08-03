@@ -1,58 +1,9 @@
-/* Allgemeine Stile */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Futura', serif;
-  color: $color-primary;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  text-align: center;
-  padding-top: 20vh;
-}
-
-/* Stil für den gesamten Inhalt */
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  margin-top: 10vh;
-
-  width: 50%;
-  text-align: center;
-  line-hight: 2rem;
-
-  section {
-    margin-bottom: 5rem;
-  }
-
-  h1 {
-    font-family: 'Garamond', serif;
-  }
-
-  h2 {
-    font-family: 'Garamond', serif;
-    text-decoration: underline;
-    font-size: 1.1rem;
-  }
-
-  a {
-    font-family: 'Garamond', serif;
-    font-style: italic;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-// home styles
 body.home-index {
   background: image-url('background.jpg') no-repeat center 40vh;
   background-size: contain;
   background-attachment: scroll;
+  align-items: flex-start;
+  min-height: 200vh;
 }
 
 @media (max-width: 768px) {
@@ -71,7 +22,13 @@ body.home-index {
   }
 }
 
-.content {
+.content-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 10vh;
+
   .coming-soon {
     font-family: 'Garamond', serif;
     font-size: 2rem;
@@ -155,4 +112,3 @@ body.home-index {
     }
   }
 }
-

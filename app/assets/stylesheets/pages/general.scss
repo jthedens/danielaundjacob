@@ -1,0 +1,49 @@
+/* Allgemeine Stile */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', serif;
+  color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  // padding-top: 20vh;
+}
+
+/* Stil für den gesamten Inhalt */
+.content {
+  padding: 1rem;
+  width: 30vw;
+  line-height: 2.5;
+}
+
+/* Allgemeine Stile für h1, h2, p und a */
+h1 {
+  font-family: 'Futura', serif; // Setzt die Schriftart für h1 auf Garamond
+  letter-spacing: 0.4rem;
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-family: 'Futura', serif; // Setzt die Schriftart für h2 auf Garamond
+  letter-spacing: 0.2rem;
+  text-decoration: underline; // Unterstreicht den Text für h2
+}
+
+p {
+  font-family: 'Futura', serif; // Setzt die Schriftart für p auf Futura
+  font-size: 1rem;
+}
+
+a {
+  font-family: 'Garamond', serif; // Setzt die Schriftart für Links auf Garamond
+  font-style: italic; // Setzt die Schriftart für Links auf kursiv
+  color: $color-primary; // Setzt die Textfarbe für Links auf die primäre Farbe
+  text-decoration: none; // Entfernt die Standardunterstreichung
+
+  &:hover {
+    text-decoration: underline; // Unterstreicht den Text bei Hover
+  }
+}

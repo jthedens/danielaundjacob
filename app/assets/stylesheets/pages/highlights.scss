@@ -3,19 +3,7 @@ body.home-highlights {
   color: $color-secondary;
 }
 
-.highlights-content {
-  line-height: 2;
-
-
-  p {
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-
-  a {
-    font-size: 1rem;
-    color: $color-primary;
-    text-decoration: none;
-  }
+.tabs-underlined .tab-underlined {
+  color: $color-secondary;
 }
 

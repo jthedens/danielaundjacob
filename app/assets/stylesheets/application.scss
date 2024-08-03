@@ -6,6 +6,8 @@
 @import "components/avatar";
 
 /* Dann die spezifischen Seiten-Styles*/
+@import 'pages/general';
+
 @import 'pages/home';
 @import 'pages/start';
 @import 'pages/details';

@@ -1,1 +1,17 @@
+body.home-details {
+  background-color: $color-secondary;
+  color: $color-primary;
+}
+
+.tabs-underlined .tab-underlined {
+  color: $color-primary;
+}
+
+.details-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Abstand zu den anderen Abschnitten */
+  width: 40vw;
+}
 

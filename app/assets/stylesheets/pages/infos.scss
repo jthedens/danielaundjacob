@@ -1,6 +1,10 @@
 body.home-infos {
   background-color: $color-quaternary;
 
+  .tabs-underlined .tab-underlined {
+    color: $color-primary;
+  }
+
   h2 {
     text-decoration: underline;
   }

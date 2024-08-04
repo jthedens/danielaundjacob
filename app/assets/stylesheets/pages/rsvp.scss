@@ -1,25 +1,14 @@
 body.home-rsvp {
   background-color: $color-quaternary;
 
-  .content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      font-size: 1rem;
-      margin: 5px 0;
-    }
-  }
-
   .tabs-underlined .tab-underlined {
     color: $color-primary;
   }
 
   .tabs-underlined a:hover {
-  color: #b1804d;
-  border-bottom: 1px solid $color-primary;
-}
+    color: #b1804d;
+    border-bottom: 1px solid $color-primary;
+  }
 }
 
 .contact {
@@ -27,4 +16,6 @@ body.home-rsvp {
   font-family: 'Garamond', serif;
 }
 
+@media (max-width: 768px) {
+}
 

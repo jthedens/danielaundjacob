@@ -31,40 +31,40 @@
   border-bottom: 1px solid $color-secondary;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white; /* Hintergrundfarbe für das Dropdown */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  min-width: 160px;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+// .dropdown-content {
+//   display: none;
+//   position: absolute;
+//   background-color: white; /* Hintergrundfarbe für das Dropdown */
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//   z-index: 1;
+//   min-width: 160px;
+//   top: 100%;
+//   left: 0;
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
 
-.dropdown-content li {
-  padding: 0;
-  margin: 0;
-}
+// .dropdown-content li {
+//   padding: 0;
+//   margin: 0;
+// }
 
-.dropdown-content a {
-  color: $color-primary;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+// .dropdown-content a {
+//   color: $color-primary;
+//   padding: 12px 16px;
+//   text-decoration: none;
+//   display: block;
+//   text-align: left;
+// }
 
-.tab-underlined:hover .dropdown-content {
-  display: block;
-}
+// .tab-underlined:hover .dropdown-content {
+//   display: block;
+// }
 
-.tab-underlined:hover {
-  border-bottom: 3px solid $color-secondary;
-}
+// .tab-underlined:hover {
+//   border-bottom: 3px solid $color-secondary;
+// }
 
 /* Entfernen der Aufzählungspunkte und horizontale Anordnung */
 .list-inline {
@@ -77,4 +77,43 @@
 
 .list-inline li {
   display: inline;
+}
+
+// Desktop Styles
+@media (min-width: 769px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+// Mobile Styles
+@media (max-width: 768px) {
+  .tabs-underlined {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .tabs-underlined .tab-underlined {
+    display: none;
+  }
+
+  .tabs-underlined.active .tab-underlined {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid $color-secondary;
+  }
+
+  .dropdown-content {
+    position: relative;
+  }
 }

@@ -49,3 +49,26 @@ a {
     text-decoration: underline; // Unterstreicht den Text bei Hover
   }
 }
+
+// Mobile Stile
+@media (max-width: 768px) {
+  .content {
+    width: 65vw;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  p, a {
+    font-size: 0.7rem;
+  }
+}

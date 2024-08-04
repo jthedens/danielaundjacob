@@ -19,7 +19,6 @@ body.home-locations {
   }
 }
 
-
 .location-img {
   display: flex;
   justify-content: center;
@@ -29,3 +28,10 @@ body.home-locations {
   width: 40vw;
 }
 
+@media (max-width: 768px) {
+
+  .location-img {
+    width: 80vw;
+  }
+
+}

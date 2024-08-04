@@ -22,3 +22,13 @@ body.home-details {
   width: 40vw;
 }
 
+@media (max-width: 768px) {
+
+  body.home-details {
+    padding-top: 0;
+  }
+
+  .details-img {
+    width: 80vw;
+  }
+}

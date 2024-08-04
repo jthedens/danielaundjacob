@@ -1,16 +1,18 @@
 body.home-details {
   background-color: $color-secondary;
   color: $color-primary;
-  padding-top: 5vh;
 
   .tabs-underlined .tab-underlined {
     color: $color-primary;
   }
 
-  .tabs-underlined a:hover {
-  color: #b1804d;
+  .tabs-underlined .tab-underlined.active {
   border-bottom: 1px solid $color-primary;
-}
+  }
+
+  .tabs-underlined a:hover {
+  border-bottom: 1px solid $color-primary;
+  }
 }
 
 .details-img {

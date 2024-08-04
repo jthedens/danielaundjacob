@@ -5,6 +5,14 @@ body.home-infos {
     color: $color-primary;
   }
 
+  .tabs-underlined .tab-underlined.active {
+  border-bottom: 1px solid $color-primary;
+  }
+
+  .tabs-underlined a:hover {
+  border-bottom: 1px solid $color-primary;
+  }
+
   h2 {
     text-decoration: underline;
   }

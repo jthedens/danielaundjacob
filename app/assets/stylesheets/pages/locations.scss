@@ -35,7 +35,10 @@ body.home-locations {
 @media (max-width: 768px) {
 
   .location-img {
-    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68vw;
   }
 
 }

@@ -16,4 +16,18 @@ body.home-infos {
   h2 {
     text-decoration: underline;
   }
+
+  .adresse {
+    font-style: italic;
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+
+@media (max-width: 768px) {
+
+  .adresse {
+    font-size: 0.6rem;
+  }
 }
+}
+
